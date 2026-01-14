@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관 소개 - 희망찬 신선혜 고등학교</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="ri-book-open-line"></i> 희망찬 신선혜 고등학교 도서관
+        </a>
+        <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="ri-menu-4-line"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="about.html" style="color: var(--primary);">도서관 소개</a></li>
+            <li><a href="recommendations.html">학과별 추천도서</a></li>
+            <li><a href="new-books.html">신착도서</a></li>
+            <li><a href="events.html">공지 및 행사</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="fade-in">도서관 소개</h1>
+        <p class="fade-in" style="font-size: 1.2rem; color: var(--text-light); max-width: 800px; margin-bottom: 3rem;">
+            희망찬 신선혜 고등학교 도서관은 학생들이 꿈을 키우고 미래를 준비하는 창의적 학습 공간입니다.
+        </p>
+
+        <div class="card-grid">
+            <div class="card fade-in" style="grid-column: 1 / -1;">
+                <h2><i class="ri-history-line"></i> 우리의 역사</h2>
+                <div style="margin-top: 1.5rem; padding-left: 1rem; border-left: 3px solid var(--primary);">
+                    <div style="margin-bottom: 1.5rem;">
+                        <span style="font-weight: 800; color: var(--primary); font-size: 1.2rem;">2024</span>
+                        <h4 style="margin: 0.5rem 0;">미래형 스마트 도서관 재개관</h4>
+                        <p style="color: var(--text-light);">AI 도서 추천 시스템 도입 및 디지털 학습실 구축</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <span style="font-weight: 800; color: var(--primary); font-size: 1.2rem;">2015</span>
+                        <h4 style="margin: 0.5rem 0;">독서 교육 우수 학교 선정</h4>
+                        <p style="color: var(--text-light);">교육청 주관 독서 교육 프로그램 최우수상 수상</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <span style="font-weight: 800; color: var(--primary); font-size: 1.2rem;">2010</span>
+                        <h4 style="margin: 0.5rem 0;">도서관 확장 리모델링</h4>
+                        <p style="color: var(--text-light);">북카페 형 학습 공간 신설</p>
+                    </div>
+                    <div>
+                        <span style="font-weight: 800; color: var(--primary); font-size: 1.2rem;">1995</span>
+                        <h4 style="margin: 0.5rem 0;">희망찬 신선혜 고등학교 개교 및 도서관 개관</h4>
+                        <p style="color: var(--text-light);">장서 5,000권으로 시작</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card fade-in">
+                <h3><i class="ri-map-pin-user-line"></i> 이용 안내</h3>
+                <ul style="list-style: none; margin-top: 1rem; gap: 1rem; display: flex; flex-direction: column;">
+                    <li><strong>대출 권수:</strong> 1인당 5권</li>
+                    <li><strong>대출 기간:</strong> 14일 (1회 연장 가능)</li>
+                    <li><strong>연체 규정:</strong> 연체 일수만큼 대출 정지</li>
+                </ul>
+            </div>
+
+            <div class="card fade-in">
+                <h3><i class="ri-layout-masonry-line"></i> 시설 현황</h3>
+                <ul style="list-style: none; margin-top: 1rem; gap: 1rem; display: flex; flex-direction: column;">
+                    <li><strong>일반 열람실:</strong> 150석</li>
+                    <li><strong>노트북 코너:</strong> 30석</li>
+                    <li><strong>그룹 스터디룸:</strong> 4실</li>
+                    <li><strong>보유 장서:</strong> 35,000여 권</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>희망찬 신선혜 고등학교 도서관</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    서울특별시 희망찬 신선혜구 미래로 123<br>
+                    TEL: 02-1234-5678
+                </p>
+            </div>
+            <div>
+                <h4>운영 시간</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    평일: 09:00 - 16:00
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학과별 추천도서 - 희망찬 신선혜 고등학교</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="ri-book-open-line"></i> 희망찬 신선혜 고등학교 도서관
+        </a>
+        <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="ri-menu-4-line"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="about.html">도서관 소개</a></li>
+            <li><a href="recommendations.html" style="color: var(--primary);">학과별 추천도서</a></li>
+            <li><a href="new-books.html">신착도서</a></li>
+            <li><a href="events.html">공지 및 행사</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="fade-in">학과별 추천도서</h1>
+        <p class="fade-in" style="margin-bottom: 3rem; color: var(--text-light);">
+            각 학과의 전공 심화 학습과 진로 탐색에 도움이 되는 필독서를 소개합니다.
+        </p>
+
+        <div class="tabs fade-in">
+            <button class="tab-btn active" onclick="openTab('it')">IT콘텐츠학과</button>
+            <button class="tab-btn" onclick="openTab('health')">보건간호과</button>
+            <button class="tab-btn" onclick="openTab('beauty')">뷰티미용과</button>
+            <button class="tab-btn" onclick="openTab('food')">외식조리과</button>
+        </div>
+
+        <!-- IT Contents -->
+        <div id="it" class="tab-content active">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <div class="book-cover"
+                    style="background: linear-gradient(135deg, #1e293b, #334155); color: white; flex-direction: column; padding: 1rem; text-align: center;">
+                    <i class="ri-code-s-slash-line" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h4 style="color: white; margin: 0; font-size: 1.1rem;">시작하세요!<br>C# 프로그래밍</h4>
+                </div>
+                <div class="book-info">
+                    <span class="book-tag">전공기초</span>
+                    <h4>시작하세요! C# 프로그래밍</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">C#의 기초부터 심화까지, 게임 개발과 앱
+                        개발의 기본기를 다지는 필독서</p>
+                </div>
+            </div>
+            <!-- Book 2 -->
+            <div class="book-card">
+                <div class="book-cover"
+                    style="background: linear-gradient(135deg, #2563eb, #3b82f6); color: white; flex-direction: column; padding: 1rem; text-align: center;">
+                    <i class="ri-smartphone-line" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h4 style="color: white; margin: 0; font-size: 1.1rem;">모바일 UI/UX<br>디자인 실무</h4>
+                </div>
+                <div class="book-info">
+                    <span class="book-tag">기획/디자인</span>
+                    <h4>모바일 UI/UX 디자인</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">사용자 중심의 앱 디자인 프로세스와
+                        프로토타이핑 테크닉</p>
+                </div>
+            </div>
+            <!-- Book 3 -->
+            <div class="book-card">
+                <div class="book-cover"
+                    style="background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; flex-direction: column; padding: 1rem; text-align: center;">
+                    <i class="ri-robot-line" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h4 style="color: white; margin: 0; font-size: 1.1rem;">인공지능을 위한<br>수학</h4>
+                </div>
+                <div class="book-info">
+                    <span class="book-tag">융합기술</span>
+                    <h4>인공지능 수학</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">AI 알고리즘 이해를 위한 필수 기초 수학
+                        개념 정리</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Health Nursing -->
+        <div id="health" class="tab-content">
+            <div class="book-card">
+                <div class="book-cover"
+                    style="background: linear-gradient(135deg, #059669, #10b981); color: white; flex-direction: column; padding: 1rem; text-align: center;">
+                    <i class="ri-pulse-line" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h4 style="color: white; margin: 0; font-size: 1.1rem;">나이팅게일의<br>간호론</h4>
+                </div>
+                <div class="book-info">
+                    <span class="book-tag">간호윤리</span>
+                    <h4>나이팅게일의 간호론</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">현대 간호학의 기초가 된 나이팅게일의 생생한
+                        조언과 철학</p>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover"
+                    style="background: linear-gradient(135deg, #14b8a6, #2dd4bf); color: white; flex-direction: column; padding: 1rem; text-align: center;">
+                    <i class="ri-first-aid-kit-line" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h4 style="color: white; margin: 0; font-size: 1.1rem;">알기 쉬운<br>인체해부학</h4>
+                </div>
+                <div class="book-info">
+                    <span class="book-tag">기초의학</span>
+                    <h4>알기 쉬운 인체해부학</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">예비 간호사가 꼭 알아야 할 우리 몸의
+                        구조와 기능</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beauty -->
+        <div id="beauty" class="tab-content">
+            <div class="book-card">
+                <div class="book-cover"
+                    style="background: linear-gradient(135deg, #db2777, #f472b6); color: white; flex-direction: column; padding: 1rem; text-align: center;">
+                    <i class="ri-magic-line" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h4 style="color: white; margin: 0; font-size: 1.1rem;">퍼스널 컬러<br>메이크업</h4>
+                </div>
+                <div class="book-info">
+                    <span class="book-tag">메이크업</span>
+                    <h4>퍼스널 컬러 메이크업</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">나에게 맞는 색을 찾아 이미지 메이킹을
+                        완성하는 뷰티 가이드</p>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover"
+                    style="background: linear-gradient(135deg, #be185d, #ec4899); color: white; flex-direction: column; padding: 1rem; text-align: center;">
+                    <i class="ri-scissors-cut-line" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h4 style="color: white; margin: 0; font-size: 1.1rem;">헤어 디자인의<br>기초</h4>
+                </div>
+                <div class="book-info">
+                    <span class="book-tag">헤어미용</span>
+                    <h4>헤어 디자인의 기초</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">커트, 펌, 컬러링의 기본 원리와 최신
+                        트렌드 분석</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Cooking -->
+        <div id="food" class="tab-content">
+            <div class="book-card">
+                <div class="book-cover"
+                    style="background: linear-gradient(135deg, #d97706, #fbbf24); color: white; flex-direction: column; padding: 1rem; text-align: center;">
+                    <i class="ri-restaurant-line" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h4 style="color: white; margin: 0; font-size: 1.1rem;">서양 조리의<br>이해</h4>
+                </div>
+                <div class="book-info">
+                    <span class="book-tag">조리이론</span>
+                    <h4>서양 조리의 이해</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">프렌치부터 이탈리안까지 서양 요리의 역사와
+                        기본 테크닉</p>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover"
+                    style="background: linear-gradient(135deg, #ea580c, #f97316); color: white; flex-direction: column; padding: 1rem; text-align: center;">
+                    <i class="ri-cake-3-line" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h4 style="color: white; margin: 0; font-size: 1.1rem;">파티시에<br>제과제빵</h4>
+                </div>
+                <div class="book-info">
+                    <span class="book-tag">베이커리</span>
+                    <h4>파티시에 제과제빵</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;">초보자도 따라할 수 있는 베이킹 레시피와
+                        과학적 원리</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>희망찬 신선혜 고등학교 도서관</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    서울특별시 희망찬 신선혜구 미래로 123<br>
+                    TEL: 02-1234-5678
+                </p>
+            </div>
+            <div>
+                <h4>운영 시간</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    평일: 09:00 - 16:00
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function openTab(tabName) {
+            // Hide all tab contents
+            const contents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+
+            // Deactivate all buttons
+            const buttons = document.getElementsByClassName('tab-btn');
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+
+            // Show the specific tab and activate button
+            document.getElementById(tabName).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

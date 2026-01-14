@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>희망찬 신선혜 고등학교 도서관</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="ri-book-open-line"></i> 희망찬 신선혜 고등학교 도서관
+        </a>
+        <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="ri-menu-4-line"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="about.html">도서관 소개</a></li>
+            <li><a href="recommendations.html">학과별 추천도서</a></li>
+            <li><a href="new-books.html">신착도서</a></li>
+            <li><a href="events.html">공지 및 행사</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" style="padding-top: 8rem;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h1 class="fade-in" style="font-size: 2.5rem; line-height: 1.3;">어서오세요.<br>희망찬 신선혜 고등학교 도서관입니다!</h1>
+        </div>
+        <div class="card-grid">
+            <div class="card fade-in" style="animation-delay: 0.1s; cursor: pointer;"
+                onclick="location.href='about.html'">
+                <i class="ri-building-4-line" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                <h3>도서관 소개</h3>
+                <p>우리 도서관의 역사와 시설을 소개합니다.<br>쾌적한 학습 공간과 휴게 공간을 만나보세요.</p>
+            </div>
+            <div class="card fade-in" style="animation-delay: 0.2s; cursor: pointer;"
+                onclick="location.href='events.html'">
+                <i class="ri-calendar-event-line"
+                    style="font-size: 2rem; color: var(--success); margin-bottom: 1rem;"></i>
+                <h3>공지 및 행사</h3>
+                <p>독서 퀴즈 대회, 저자 초청 강연 등<br>다양한 도서관 행사에 참여해보세요.</p>
+            </div>
+            <div class="card fade-in" style="animation-delay: 0.3s; cursor: pointer;"
+                onclick="location.href='new-books.html'">
+                <i class="ri-sparkling-fill" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>신착도서</h3>
+                <p>매달 들어오는 따끈따끈한 새 책 소식,<br>가장 먼저 확인하고 대출하세요.</p>
+            </div>
+            <div class="card fade-in" style="animation-delay: 0.4s; cursor: pointer;"
+                onclick="location.href='recommendations.html'">
+                <i class="ri-book-read-line" style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                <h3>학과별 추천도서</h3>
+                <p>IT콘텐츠, 보건간호, 뷰티미용, 외식조리과<br>학생들을 위한 맞춤형 도서를 추천해드립니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>희망찬 신선혜 고등학교 도서관</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    서울특별시 희망찬 신선혜구 미래로 123<br>
+                    TEL: 02-1234-5678
+                </p>
+            </div>
+            <div>
+                <h4>운영 시간</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    평일: 09:00 - 16:00
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

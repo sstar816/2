@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지 및 행사 - 희망찬 신선혜 고등학교</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="ri-book-open-line"></i> 희망찬 신선혜 고등학교 도서관
+        </a>
+        <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="ri-menu-4-line"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="about.html">도서관 소개</a></li>
+            <li><a href="recommendations.html">학과별 추천도서</a></li>
+            <li><a href="new-books.html">신착도서</a></li>
+            <li><a href="events.html" style="color: var(--primary);">공지 및 행사</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="fade-in">공지사항 및 행사</h1>
+        <p class="fade-in" style="margin-bottom: 3rem; color: var(--text-light);">
+            도서관의 새로운 소식과 다양한 문화 행사를 확인하세요.
+        </p>
+
+        <div class="card-grid fade-in">
+            <!-- Event 1 -->
+            <div class="card" style="border-left: 5px solid var(--primary);">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <span
+                        style="background: rgba(79, 70, 229, 0.1); color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600;">행사</span>
+                    <span style="color: var(--text-light); font-size: 0.9rem;">2024.10.25</span>
+                </div>
+                <h3><a href="#" style="text-decoration: none; color: inherit;">가을 독서 퀴즈 대회</a></h3>
+                <p style="color: var(--text-light); margin-bottom: 1rem;">독서의 계절 가을을 맞아 전교생 대상 독서 퀴즈 대회를 개최합니다. 푸짐한 상품이
+                    준비되어 있으니 많은 참여 바랍니다.</p>
+                <div style="display: flex; gap: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                    <span><i class="ri-calendar-line"></i> 11월 5일 (금)</span>
+                    <span><i class="ri-map-pin-line"></i> 도서관 1층 로비</span>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="card" style="border-left: 5px solid var(--secondary);">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <span
+                        style="background: rgba(236, 72, 153, 0.1); color: var(--secondary); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600;">공지</span>
+                    <span style="color: var(--text-light); font-size: 0.9rem;">2024.10.20</span>
+                </div>
+                <h3><a href="#" style="text-decoration: none; color: inherit;">11월 신착도서 입고 안내</a></h3>
+                <p style="color: var(--text-light); margin-bottom: 1rem;">11월 신착도서 50권이 입고되었습니다. 정리 작업 후 다음 주 월요일부터 대출
+                    가능합니다.</p>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="card" style="border-left: 5px solid var(--accent);">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <span
+                        style="background: rgba(139, 92, 246, 0.1); color: var(--accent); padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600;">휴관</span>
+                    <span style="color: var(--text-light); font-size: 0.9rem;">2024.10.15</span>
+                </div>
+                <h3><a href="#" style="text-decoration: none; color: inherit;">학기말 고사 기간 연장 운영</a></h3>
+                <p style="color: var(--text-light); margin-bottom: 1rem;">시험 기간을 맞아 도서관 운영 시간을 22시까지 연장합니다. 열람실 이용에
+                    참고하시기 바랍니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>희망찬 신선혜 고등학교 도서관</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    서울특별시 희망찬 신선혜구 미래로 123<br>
+                    TEL: 02-1234-5678
+                </p>
+            </div>
+            <div>
+                <h4>운영 시간</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    평일: 09:00 - 16:00
+                </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
